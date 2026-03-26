@@ -3,10 +3,13 @@ import About from "@/components/landing/About";
 import Features from "@/components/landing/Features";
 import HowItWorks from "@/components/landing/HowItWorks";
 import AboutDeveloper from "@/components/landing/AboutDeveloper";
+import Navbar from "@/components/landing/Navbar";
+import NextImage from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Navbar />
       <Hero />
       <About />
       <Features />
@@ -14,23 +17,22 @@ export default function Home() {
       <AboutDeveloper />
       
       {/* Footer */}
-      <footer className="py-12 border-t border-slate-100 bg-white">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">
-              <span className="font-bold text-xl">P</span>
+      <footer className="py-20 bg-background border-t border-white/5">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
+          <div className="flex items-center">
+            <div className="relative w-40 h-12">
+              <NextImage src="/logo.png" alt="Logo" fill className="object-contain" />
             </div>
-            <span className="text-xl font-bold font-heading text-slate-900">PromptKit</span>
           </div>
           
-          <div className="text-slate-500 text-sm font-sans text-center">
-            © 2026 PromptKit. A local-first tool for professional AI developers.
+          <div className="text-slate-500 text-sm font-sans text-center max-w-sm">
+            © 2026. A premium engineering workbench for the next generation of AI developers.
           </div>
           
-          <div className="flex gap-8 text-sm text-slate-600">
-            <a href="#" className="hover:text-blue-600 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Github</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Docs</a>
+          <div className="flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-500">
+            <a href="#" className="hover:text-brand-cyan transition-colors">Privacy</a>
+            <a href="#" className="hover:text-brand-cyan transition-colors">GitHub</a>
+            <a href="#" className="hover:text-brand-cyan transition-colors">Docs</a>
           </div>
         </div>
       </footer>

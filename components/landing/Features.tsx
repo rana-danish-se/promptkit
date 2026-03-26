@@ -35,15 +35,17 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4">Features</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-heading">
-            Built for prompt engineers, by enthusiasts.
+    <section id="features" className="pb-20 pt-10 bg-background relative overflow-hidden">
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-brand-cyan/5 rounded-full blur-[150px] pointer-events-none" />
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center max-w-[900px] mx-auto mb-10">
+          <h2 className="text-sm font-black tracking-[0.3em] text-brand-cyan uppercase mb-4">The Arsenal</h2>
+          <h3 className="text-4xl md:text-6xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
+            Built for prompt engineers, <br /><span className="text-brand-purple">perfected by code.</span>
           </h3>
-          <p className="text-lg text-slate-600">
-            A minimalist tool that focuses on what matters: the quality of your AI interactions.
+          <p className="text-xl text-slate-400 font-sans max-w-2xl mx-auto">
+            A minimalist tool that focuses on what matters: the absolute quality of your AI interactions.
           </p>
         </div>
 
@@ -51,13 +53,13 @@ export default function Features() {
           {features.map((feature, idx) => (
             <div 
               key={idx}
-              className="group p-8 bg-white border border-slate-100 rounded-2xl hover:border-blue-100 hover:shadow-premium transition-all duration-300"
+              className="group p-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:border-brand-cyan/30 hover:bg-brand-cyan/5 transition-all duration-500"
             >
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
-                <feature.icon className="w-6 h-6" />
+              <div className="w-14 h-14 bg-brand-cyan rounded-2xl flex items-center justify-center text-slate-900 mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-[0_0_20px_rgba(34,182,212,0.2)]">
+                <feature.icon className="w-7 h-7" />
               </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3 font-heading">{feature.title}</h4>
-              <p className="text-slate-600 leading-relaxed font-sans">
+              <h4 className="text-2xl font-black text-white mb-4 uppercase tracking-tight">{feature.title}</h4>
+              <p className="text-slate-400 leading-relaxed font-sans text-lg">
                 {feature.description}
               </p>
             </div>

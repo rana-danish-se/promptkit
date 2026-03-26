@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PromptKit — Professional Prompt Engineering Workbench",
+  title: "Professional Prompt Engineering Workbench",
   description: "Test, compare, refine, and save prompts across multiple free LLM models.",
 };
 
