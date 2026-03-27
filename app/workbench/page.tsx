@@ -29,7 +29,7 @@ export default function WorkbenchPage() {
     setSavedPrompts(storage.getPrompts());
   }, []);
 
-  const handleRun = async () => {
+ const handleRun = async () => {
     if (!userMessage.trim()) return;
     
     setIsEngineering(true);

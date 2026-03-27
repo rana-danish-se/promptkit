@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="py-20 bg-background border-y border-white/5 overflow-hidden relative" id="about">
-      {/* Subtle glows */}
+     
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-brand-purple/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -39,7 +39,7 @@ export default function About() {
                 ))}
               </div>
             </div>
-            {/* Design accents */}
+        
             <div className="absolute -top-12 -right-12 w-48 h-48 bg-brand-cyan/10 rounded-full blur-3xl opacity-50" />
             <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-brand-purple/10 rounded-full blur-3xl opacity-50" />
           </div>

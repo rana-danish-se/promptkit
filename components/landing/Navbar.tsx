@@ -21,7 +21,7 @@ export default function Navbar() {
       isScrolled ? "bg-background/80 backdrop-blur-md border-border py-2 shadow-xl shadow-purple-900/10" : "bg-transparent py-4 border-transparent"
     }`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo only */}
+        
         <Link href="/" className="flex items-center group">
           <div className="relative w-40 h-12 md:w-52 md:h-14 group-hover:scale-105 transition-transform duration-300 filter drop-shadow-[0_0_10px_rgba(34,182,212,0.3)]">
             <Image 

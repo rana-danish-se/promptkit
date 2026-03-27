@@ -20,11 +20,11 @@ export default function Sidebar({ prompts, currentId, onSelect, onDelete, onNew,
       transform transition-transform duration-300 ease-in-out
       ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
     `}>
-      {/* Subtle background glow */}
+      
       <div className="absolute top-0 left-0 w-full h-32 bg-linear-to-b from-brand-purple/10 to-transparent pointer-events-none" />
       
       <div className="p-4 border-b border-white/5 relative space-y-6">
-        {/* Mobile close button */}
+        
         <button
           onClick={onClose}
           className="md:hidden absolute top-3 right-3 p-1.5 rounded-lg text-slate-500 hover:text-white hover:bg-white/5 transition-all"

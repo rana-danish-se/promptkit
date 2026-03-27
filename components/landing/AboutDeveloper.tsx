@@ -6,7 +6,7 @@ export default function AboutDeveloper() {
     <section className="py-24 bg-background" id="about-developer">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto p-10 md:p-14 bg-white/5 backdrop-blur-3xl rounded-4xl border border-white/10 flex flex-col md:flex-row items-center gap-10 md:gap-14 text-center md:text-left relative overflow-hidden group hover:border-brand-cyan/30 transition-all duration-700 shadow-2xl">
-            {/* Decorative background element */}
+            
             <div className="absolute -top-32 -right-32 w-80 h-80 bg-brand-cyan/5 blur-[100px] rounded-full group-hover:bg-brand-cyan/10 transition-colors duration-1000" />
             
             <div className="relative z-10 w-36 h-36 md:w-48 md:h-48 rounded-[2.5rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl shadow-brand-cyan/10 rotate-3 group-hover:rotate-0 border-2 border-white/5">

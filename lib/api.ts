@@ -35,7 +35,7 @@ export async function fetchAIResponse(
   };
 
   if (provider === 'openrouter') {
-    headers["HTTP-Referer"] = "https://promptkit.local"; // Required by OpenRouter
+    headers["HTTP-Referer"] = "https://promptkit.local"; 
     headers["X-Title"] = "PromptKit Workbench";
   }
 

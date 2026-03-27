@@ -8,11 +8,11 @@ interface EditorProps {
 export default function Editor({ systemPrompt, userMessage, onChangeSystem, onChangeUser }: EditorProps) {
   return (
     <div className="flex flex-col min-w-0 md:flex-1 bg-background relative overflow-hidden">
-      {/* Subtle background glow */}
+      
       <div className="absolute top-0 right-0 w-64 h-64 bg-brand-cyan/5 blur-[100px] pointer-events-none animate-glow" />
       
       <div className="p-4 md:flex-1 md:p-8 space-y-10 md:overflow-y-auto relative custom-scrollbar">
-        {/* System Prompt */}
+        
         <div className="space-y-4 group">
           <div className="flex items-center gap-3 mb-1">
             <span className="px-2.5 py-1 bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.2em] rounded-md border border-brand-cyan/20">System</span>
@@ -26,7 +26,7 @@ export default function Editor({ systemPrompt, userMessage, onChangeSystem, onCh
           />
         </div>
 
-        {/* User Message */}
+        
         <div className="space-y-4 group">
           <div className="flex items-center gap-3 mb-1">
             <span className="px-2.5 py-1 bg-white/5 text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rounded-md border border-white/10">User</span>

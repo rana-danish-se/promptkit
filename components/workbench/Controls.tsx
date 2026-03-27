@@ -30,7 +30,7 @@ export default function Controls({
   return (
     <div className="border-t border-white/5 p-3 md:p-5 bg-white/5 backdrop-blur-3xl shrink-0 flex flex-wrap items-center justify-between gap-4 relative z-20">
       <div className="flex  items-center gap-4 md:gap-10 flex-wrap">
-        {/* Model Selector */}
+        
         <div className="flex items-center gap-2">
           <span className="hidden sm:inline text-[10px] font-medium uppercase tracking-[0.2em] text-slate-300">Model</span>
           <select 
@@ -44,7 +44,7 @@ export default function Controls({
           </select>
         </div>
 
-        {/* Temperature */}
+        
         <div className="flex items-center gap-2">
           <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-slate-300 whitespace-nowrap">Temp: {temperature.toFixed(1)}</span>
           <input 

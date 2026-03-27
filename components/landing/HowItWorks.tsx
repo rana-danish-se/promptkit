@@ -35,7 +35,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 relative">
-           {/* Visual connecting line for desktop */}
+           
            <div className="hidden lg:block absolute top-[60px] left-0 w-full h-[2px] bg-white/5 -z-10" />
            
            {steps.map((step, idx) => (

@@ -42,7 +42,7 @@ export default function ResponseCard({ response, isLoading }: ResponseCardProps)
 
   return (
     <div className="flex-1 flex flex-col min-h-0 bg-background relative">
-      {/* Response Header/Metadata */}
+      
       <div className="p-5 border-b border-white/5 bg-white/5 grid grid-cols-2 gap-4">
         <div className="flex items-center gap-3">
           <div className="p-2 bg-brand-cyan/10 rounded-xl border border-brand-cyan/20">
@@ -77,7 +77,7 @@ export default function ResponseCard({ response, isLoading }: ResponseCardProps)
          </div>
       </div>
 
-      {/* Footer Metrics */}
+      
       {response.usage && (
         <div className="p-4 border-t border-white/5 bg-white/5 flex items-center justify-between px-8">
           <div className="flex items-center gap-5 text-[12px] font-black uppercase tracking-[0.2em] text-slate-500">

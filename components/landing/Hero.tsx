@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative min-h-screen  flex items-center justify-center overflow-hidden bg-background pt-20">
-      {/* Background accents - Purple and Cyan glows */}
+    
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[700px] h-[700px] bg-brand-purple/20 rounded-full blur-[120px] animate-glow" />
       <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-cyan/20 rounded-full blur-[120px] animate-glow" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl bg-brand-purple/10 blur-[150px] rounded-full animate-glow pointer-events-none" />
